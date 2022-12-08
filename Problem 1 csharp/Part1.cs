@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-
+/* PART 1
 var sr = new StreamReader("TestData.txt");
 string? s = "";
 List<int> values = new List<int>();
@@ -20,16 +20,15 @@ if(sum != 0)
 {
     values.Add(sum);
 }
+int max = 0;
 
-values.Sort();
-values.Reverse();
-
-int final = 0;
-
-for (int i = 0; i < 3; i++)
+foreach(int i in values)
 {
-    Console.WriteLine(values[i]);
-    final += values[i];
+    if(i > max)
+    {
+        max = i;
+    }
 }
-Console.WriteLine(values.Count);
-Console.WriteLine(final);
+
+Console.WriteLine(max);
+*/

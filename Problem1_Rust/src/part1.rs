@@ -1,3 +1,5 @@
+//This solves only Part 1
+
 use std::fs;
 
 fn main() {
@@ -15,17 +17,11 @@ fn main() {
             sum += num;
         }
     }
-    if sum != 0 {
-        vector.push(sum);
+    let mut max = 0;
+    for i in vector {
+        if i > max {
+            max = i;
+        }
     }
-    let mut result = 0;
-    vector.sort_by(|a, b| b.cmp(a));
-    let mut index = 0;
-    while index < 3usize {
-        println!("{}", vector[index]);
-        result += vector[index];
-        index += 1;
-    }
-    println!("{}", vector.len());
-    println!("{}", result);
+    println!("{}", max);
 }
