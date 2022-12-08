@@ -22,10 +22,8 @@ fn main() {
     vector.sort_by(|a, b| b.cmp(a));
     let mut index = 0;
     while index < 3usize {
-        println!("{}", vector[index]);
         result += vector[index];
         index += 1;
     }
-    println!("{}", vector.len());
     println!("{}", result);
 }

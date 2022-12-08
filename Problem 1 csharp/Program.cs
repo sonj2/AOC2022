@@ -28,8 +28,6 @@ int final = 0;
 
 for (int i = 0; i < 3; i++)
 {
-    Console.WriteLine(values[i]);
     final += values[i];
 }
-Console.WriteLine(values.Count);
 Console.WriteLine(final);
